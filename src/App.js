@@ -111,9 +111,9 @@ export default function App(){
   <div className="App">
     <AppBar position="static">
         <Toolbar>
-        <Button color="inherit" onClick={()=>history.push("/")}>Home</Button>
         <Button color="inherit" onClick={()=>history.push("/movies")}>Movies</Button>
         <Button color="inherit" onClick={()=>history.push("/movies/add")}>Add Movies</Button>
+        <Button color="inherit" onClick={()=>history.push("/basicform")}>Login</Button>
         <Button color="inherit" style={{marginLeft:"auto"}}
         startIcon={mode === 'dark' ? <Brightness7Icon />: <Brightness4Icon />}
         onClick={()=>setMode(mode === "light" ? "dark" : "light")}>{mode === "light" ? "dark" : "light"} mode</Button>
@@ -135,10 +135,9 @@ export default function App(){
   <MovieList />
       </Route>
      
-      <Route path="/">Welcome to the movie app
+      <Route path="/basicform">
       <BasicForm/>
       </Route>
-    
     </Switch>
     </div>
   </div>
