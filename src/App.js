@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import {Switch, Route, useHistory} from "react-router-dom";
+import {Switch, Route, useHistory, Redirect} from "react-router-dom";
 import { MovieList } from "./MovieList";
 import { MovieDetails } from "./MovieDetails";
 import { AddMovie } from "./AddMovie";
